@@ -2,7 +2,7 @@
 
 ### **Work flow**
 #### **I will start by writing the user story**
-#### **I choose to build the game in Javascript, use RSpec for testing, css and Tailwind for styling. Deploying through Netlify**
+#### **I choose to build the game in Javascript because it works nicely when building games, and gives me as a programmer a variety of options when styling togehther with css and Tailwind. I use RSpec for testing and deploying through Netlify**
 
 ### **User story**
 #### **As a player of the rps game, I want to compete against a computer**

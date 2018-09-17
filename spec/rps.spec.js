@@ -1,11 +1,12 @@
-const { rps } = require('./spec.helper.js')
+const { Rps } = require('./spec.helper')
 
-// let rps = new rps
+describe('Given user picks rock', () => {
+    let rps = new Rps()
 
-describe('Rock Paper Scissors', () => {
-
-    it ('expect true to be false',() => {
-        expect(rps.result(1)).to.eql('true');
+    it ('When computer picks rock, its even',() => {
+        expect(rps.pick('rock','rock')).to.eql('even');
     }) 
+
+    
 })
 
