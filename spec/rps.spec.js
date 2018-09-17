@@ -7,6 +7,8 @@ describe('Given user picks rock', () => {
         expect(rps.pick('rock','rock')).to.eql('even');
     }) 
 
-    
+    it ('When computer picks scissor, user wins',() =>{
+        expect(rps.pick('rock','scissor')).to.eql('wins')
+    })
 })
 

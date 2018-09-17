@@ -1,7 +1,10 @@
 
 function Rps() {
     this.pick = (userP, compP) => {
-        return 'even';
 
+        if (userP === compP)
+            return 'even';
+        else 
+            return 'wins';
     }
-}
+}   
