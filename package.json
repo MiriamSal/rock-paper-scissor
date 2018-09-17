@@ -2,7 +2,7 @@
   "name": "rps",
   "version": "1.0.0",
   "description": "### **Work flow** #### **I will start by writing the user story** #### **I choose to build the game in Ruby becouse it is a flexible and writer friendly language that lets me as a programmer work with shorter blocks of code and allows me to be creative** #### **I will use RSpec to unittest, css plus Tailwind for styling and deploy the site using Netlify**",
-  "main": "index.js",
+  "main": "rps.js",
   "scripts": {
     "test": "npm run features && npm run specs",
     "features": "superstatic src -p 8080 & mocha --timeout 100000 --recursive  --reporter=spec features ; PORT=8080 npm run stop-test-server ",
@@ -10,19 +10,18 @@
     "server": "superstatic src -p 3000",
     "stop-test-server": "lsof -ti tcp:$PORT | xargs kill"
   },
- 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MiriamSal/rock-paper-scissor.git"
   },
-  "author": "",
+  "author": "MS",
   "license": "ISC",
+  "devDependencies": {
+    "e2e_training_wheels": "0.0.15"
+  },
   "bugs": {
     "url": "https://github.com/MiriamSal/rock-paper-scissor/issues"
   },
-  "homepage": "https://github.com/MiriamSal/rock-paper-scissor#readme",
-  "devDependencies": {
-    "e2e_training_wheels": "0.0.15"
-  }
-
-}
+  "homepage": "https://github.com/MiriamSal/rock-paper-scissor#readme"
+} 
+   

@@ -2,8 +2,7 @@
 
 ### **Work flow**
 #### **I will start by writing the user story**
-#### **I choose to build the game in Ruby becouse it is a flexible and writer friendly language that lets me as a programmer work with shorter blocks of code and allows me to be creative**
-#### **I will use RSpec to unittest, css plus Tailwind for styling and deploy the site using Netlify**
+#### **I choose to build the game in Javascript, use RSpec for testing, css and Tailwind for styling. Deploying through Netlify**
 
 ### **User story**
 #### **As a player of the rps game, I want to compete against a computer**

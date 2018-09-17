@@ -1,9 +1,11 @@
-const { rps } = require('./spec.helper')
+const { rps } = require('./spec.helper.js')
 
-describe('rps', () => {
-    let rps = new Rps()
+// let rps = new rps
 
-    it ('expect true to be false',()=>{
-        expect(false).to.eql(true);
+describe('Rock Paper Scissors', () => {
+
+    it ('expect true to be false',() => {
+        expect(rps.result(1)).to.eql('true');
     }) 
 })
+
