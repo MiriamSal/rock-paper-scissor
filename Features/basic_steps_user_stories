@@ -1,0 +1,24 @@
+
+Description: User story
+
+As a player 
+I want to visit the game application site
+
+As a player
+I want to be able to start a new game 
+
+As a player
+I want to be displayed with the rules of the game
+
+As a player
+I want to be able to choose between rock, paper and scissor
+
+As a player
+I want to compete against a computer
+And I want to see the computers choise
+
+As a player
+I want to be given the result of the match
+
+As a player
+I want to have the choise to play again
