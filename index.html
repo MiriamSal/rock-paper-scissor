@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+    <input type="button" value="Rock" id="rockBtn"/>
+    <input type="button" value="Paper" id="paperBtn"/>
+    <input type="button" value="Scissors" id="scissorsBtn"/>
+    <div id="display_answer"></div>
+</body>
+
+<script src="src/js/rps.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            let rockButton = document.getElementById('rockBtn')
+            rockButton.addEventListener('click', () => {
+                let value = document.getElementById('rockBtn').value
+                let rps = new Rps()
+                let result = rps.pick('rock', 'rock')
+                displayDiv.innerHTML = result;
+            })
+            let paperButton = document.getElementById('paperBtn')
+            paperButton.addEventListener('click', () => {
+                let value = document.getElementById('paperBtn').value
+                let rps = new Rps()
+                let result = rps.pick('paper', 'rock')
+                displayDiv.innerHTML = result;
+            })
+
+            let scissorsButton = document.getElementById('scissorsBtn')
+            scissorsButton.addEventListener('click', () => {
+                let value = document.getElementById('scisorsBtn').value
+                let rps = new Rps()
+                let result = rps.pick('scissors', 'rock')
+                displayDiv.innerHTML = result;
+            })
+        })
+    </script>
+</html>
