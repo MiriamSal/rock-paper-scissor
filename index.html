@@ -18,6 +18,7 @@
 <script src="src/js/rps.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            let displayDiv = document.getElementById('display_answer')
 
             let rockButton = document.getElementById('rockBtn')
             rockButton.addEventListener('click', () => {
@@ -30,15 +31,15 @@
             paperButton.addEventListener('click', () => {
                 let value = document.getElementById('paperBtn').value
                 let rps = new Rps()
-                let result = rps.pick('paper', 'rock')
+                let result = rps.pick('rock', 'paper')
                 displayDiv.innerHTML = result;
             })
 
             let scissorsButton = document.getElementById('scissorsBtn')
             scissorsButton.addEventListener('click', () => {
-                let value = document.getElementById('scisorsBtn').value
+                let value = document.getElementById('scissorsBtn').value
                 let rps = new Rps()
-                let result = rps.pick('scissors', 'rock')
+                let result = rps.pick('rock', 'scissors')
                 displayDiv.innerHTML = result;
             })
         })

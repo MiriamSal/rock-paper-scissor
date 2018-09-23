@@ -1,14 +1,14 @@
 function Rps() {
-    this.pick = (userP, compP) => {
+    this.pick = (compP, userP) => {
 
-        if (userP === compP) {
+        if (compP === userP) {
             return 'even';
         }
-        else if (userP === 'rock' && compP === 'scissor') { 
-            return 'wins'; 
+        else if (compP === 'rock' && userP === 'scissors') { 
+            return 'loose'; 
         }
         else {
-            return 'loose';
+            return 'win';
         }
     }
 }   
